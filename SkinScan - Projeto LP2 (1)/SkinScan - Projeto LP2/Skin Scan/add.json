@@ -1,0 +1,74 @@
+
+{
+    "questionario": {
+      "1": {
+        "pergunta": "Qual seu tipo de pele?",
+        "opcoes": [
+          {
+            "tipo": "Pele oleosa",
+            "descricao": "Produção do sebo em excesso e características como poros dilatados, brilho excessivo e até mesmo a acne."
+          },
+          {
+            "tipo": "Pele seca",
+            "descricao": "Descamação, coceira, aparência sem viço e luminosidade, aspecto esbranquiçado, sensação de repuxamento."
+          },
+          {
+            "tipo": "Pele normal",
+            "descricao": "Possui textura saudável e equilíbrio entre água e sebo."
+          },
+          {
+            "tipo": "Pele mista",
+            "descricao": "É caracterizada por uma zona “t” oleosa (testa, nariz e queixo) e pele normal a seca (ou mesmo escamosa) no resto do rosto."
+          }
+        ]
+      },
+      "2": {
+        "pergunta": "Qual seu sexo biológico?",
+        "opcoes": [
+          "Feminino",
+          "Masculino"
+        ],
+        "observacao": "Ingredientes cosméticos podem reagir diferentemente com hormônios femininos e masculinos."
+      },
+      "3": {
+        "pergunta": "Qual sua idade?",
+        "opcoes": [
+          "Menos de 21",
+          "De 21 a 30",
+          "De 31 a 40",
+          "De 41 a 50",
+          "De 51 a 60",
+          "Mais de 60"
+        ]
+      },
+      "4": {
+        "pergunta": "Qual suas necessidades principais? (Pode marcar mais de uma)",
+        "opcoes": [
+          "Acne, oleosidade e cravos",
+          "Rugas, linhas finas",
+          "Manchas/cicatrizes de acne, melasmas",
+          "Textura irregular ou aspereza",
+          "Vermelhidão, pele reativa, rosácea"
+        ]
+      },
+      "5": {
+        "pergunta": "Você considera sua pele sensível?",
+        "opcoes": [
+          "Sim",
+          "Não"
+        ]
+      }
+    },
+    "rotina_final": {
+      "condicao": {
+        "pele_sensivel_seca": {
+          "resposta": "Sim",
+          "opcoes_permitidas": ["Sim", "Não"]
+        },
+        "pele_oleosa_acne": {
+          "resposta": "Não",
+          "opcoes_permitidas": ["Sim", "Não"]
+        }
+      }
+    }
+  }

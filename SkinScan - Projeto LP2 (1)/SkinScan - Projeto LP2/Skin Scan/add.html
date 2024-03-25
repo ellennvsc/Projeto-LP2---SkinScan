@@ -1,0 +1,79 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário de Cuidados com a Pele</title>
+</head>
+<body>
+
+<h2>Questionário de Cuidados com a Pele</h2>
+
+<form id="questionarioForm">
+  <label for="tipoPele">1. Qual seu tipo de pele?</label><br>
+  <select id="tipoPele" name="tipoPele">
+    <option value="Pele oleosa">Pele oleosa</option>
+    <option value="Pele seca">Pele seca</option>
+    <option value="Pele normal">Pele normal</option>
+    <option value="Pele mista">Pele mista</option>
+  </select><br><br>
+  
+  <label for="sexoBiologico">2. Qual seu sexo biológico?</label><br>
+  <input type="radio" id="feminino" name="sexoBiologico" value="Feminino">
+  <label for="feminino">Feminino</label><br>
+  <input type="radio" id="masculino" name="sexoBiologico" value="Masculino">
+  <label for="masculino">Masculino</label><br><br>
+  
+  <label for="idade">3. Qual sua idade?</label><br>
+  <select id="idade" name="idade">
+    <option value="Menos de 21">Menos de 21</option>
+    <option value="De 21 a 30">De 21 a 30</option>
+    <option value="De 31 a 40">De 31 a 40</option>
+    <option value="De 41 a 50">De 41 a 50</option>
+    <option value="De 51 a 60">De 51 a 60</option>
+    <option value="Mais de 60">Mais de 60</option>
+  </select><br><br>
+  
+  <label for="necessidades">4. Qual suas necessidades principais? (Pode marcar mais de uma)</label><br>
+  <input type="checkbox" id="acne" name="necessidades" value="Acne, oleosidade e cravos">
+  <label for="acne">Acne, oleosidade e cravos</label><br>
+  <input type="checkbox" id="rugas" name="necessidades" value="Rugas, linhas finas">
+  <label for="rugas">Rugas, linhas finas</label><br>
+  <input type="checkbox" id="manchas" name="necessidades" value="Manchas/cicatrizes de acne, melasmas">
+  <label for="manchas">Manchas/cicatrizes de acne, melasmas</label><br>
+  <input type="checkbox" id="textura" name="necessidades" value="Textura irregular ou aspereza">
+  <label for="textura">Textura irregular ou aspereza</label><br>
+  <input type="checkbox" id="vermelhidao" name="necessidades" value="Vermelhidão, pele reativa, rosácea">
+  <label for="vermelhidao">Vermelhidão, pele reativa, rosácea</label><br><br>
+  
+  <label for="sensivel">5. Você considera sua pele sensível?</label><br>
+  <input type="radio" id="sim" name="sensivel" value="Sim">
+  <label for="sim">Sim</label><br>
+  <input type="radio" id="nao" name="sensivel" value="Não">
+  <label for="nao">Não</label><br><br>
+  
+  <button type="button" onclick="determinarRotina()">Enviar</button>
+</form>
+
+<script>
+function determinarRotina() {
+  var tipoPele = document.getElementById("tipoPele").value;
+  var sensivel = document.querySelector('input[name="sensivel"]:checked').value;
+  
+  var rotinaFinal;
+  if (tipoPele === "Pele seca" || sensivel === "Sim") {
+    rotinaFinal = "pele_sensivel_seca";
+  } else {
+    rotinaFinal = "pele_oleosa_acne";
+  }
+  
+  // Aqui você pode fazer o que quiser com a rotina final, como exibir uma mensagem ou redirecionar para outra página
+  console.log("A rotina final é: " + rotinaFinal);
+}
+</script>
+
+</body>
+</html>
+
+-->

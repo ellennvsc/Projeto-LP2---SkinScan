@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Cadastro - Skin Scan</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader"> 
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header s-header--opaque">
+
+        <div class="s-header__logo">
+            <a class="logo" href="index.html">
+                 <h2 style="color: white;">Skin Scan</h2>
+            </a>
+        </div>
+
+     
+        <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+
+    </header> <!-- end s-header -->
+
+
+
+
+     <!-- corpo
+    ================================================== -->
+
+
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Skin Scan</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
+
+    <h2 style="text-align: center; color: #333;">Bem-vindo ao Skin Scan!</h2>
+
+    <div style="max-width: 400px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+
+        <h3 style="text-align: center; margin-bottom: 20px;">Cadastre-se </h3>
+
+       
+
+         <!-- Formulário de Cadastro -->
+        <form action="#" method="POST" style="margin-bottom: 20px;">
+            <h4 style="margin-bottom: 10px;">Cadastro</h4>
+            <input type="text" name="nome" placeholder="Nome" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+            <input type="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+            <input type="password" name="senha" placeholder="Senha" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Cadastrar</button>
+        </form>
+
+    </div>
+    <script>
+        // Carrega os dados do JSON
+        fetch('sga-cad.json')
+            .then(response => response.json())
+            .then(data => {
+                // Preenche o formulário com os dados do JSON
+                const dynamicContent = document.getElementById('dynamic-content');
+                dynamicContent.innerHTML = `
+                    <h3 style="text-align: center; margin-bottom: 20px;">${data.formTitle}</h3>
+                    <form action="#" method="POST" style="margin-bottom: 20px;">
+                        <h4 style="margin-bottom: 10px;">Cadastro</h4>
+                        <input type="text" name="nome" placeholder="${data.namePlaceholder}" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        <input type="email" name="email" placeholder="${data.emailPlaceholder}" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        <input type="password" name="senha" placeholder="${data.passwordPlaceholder}" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        <button type="submit" style="width: 100%; padding: 10px; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer;">${data.submitButton}</button>
+                    </form>
+                `;
+            })
+            .catch(error => console.error('Erro ao carregar dados do JSON:', error));
+    </script>
+</body>
+</html>
+
+
+    <!-- footer
+    ================================================== -->
+     <footer class="s-footer">
+
+        <div class="s-footer__main">
+
+            <div class="row">
+
+                <div class="column large-3 medium-6 tab-12 s-footer__info">
+
+                    <h5>Sobre o site</h5>
+
+                    <p>
+                    Plataforma gratuita de cuidados dermatológicos com consultas médicas online e tratamentos personalizados. Acesso a dermatologistas qualificados e rotinas de cuidados adaptadas às necessidades individuais. Democratizando o acesso aos cuidados com a pele.
+                    </p>
+
+                </div> <!-- end s-footer__info -->
+
+                <div class="column large-2 medium-3 tab-6 s-footer__site-links">
+
+                    <h5>Créditos</h5>
+
+                    <ul>
+                        <li><a href="https://styleshout.com/free-templates/calvin/">Calvin template</a></li>
+                        <li><a href="#0">Desenvolvedores</a></li>
+                        <li><a href="#0">Orientadores</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__site-links -->  
+
+                <div class="column large-2 medium-3 tab-6 s-footer__social-links">
+
+                    <h5>Nos siga em</h5>
+
+                    <ul>
+                        <li><a href="#0">Twitter</a></li>
+                        <li><a href="#0">Facebook</a></li>
+                        <li><a href="#0">Dribbble</a></li>
+                        <li><a href="#0">Pinterest</a></li>
+                        <li><a href="#0">Instagram</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__social links --> 
+
+                <div class="column large-3 medium-6 tab-12 s-footer__subscribe">
+
+                    <h5>Feedback</h5>
+
+                    <p>Em caso de alguma dúvida ou sugestão, fale conosco.</p>
+
+                    <div class="subscribe-form">
+                
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Digite aqui" required=""> 
+                
+                            <input type="submit" name="subscribe" value="subscribe" >
+                
+                            <label for="mc-email" class="subscribe-message"></label>
+                
+                        </form>
+
+                    </div>
+
+                </div> <!-- end s-footer__subscribe -->
+
+            </div> <!-- end row -->
+
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright Calvin 2020</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div> 
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright Calvin 2020</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div> 
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

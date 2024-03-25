@@ -1,0 +1,12 @@
+{
+    "pageTitle": "Cadastro - SkinScan",
+    "formTitle": "Cadastre-se",
+    "nameLabel": "Nome",
+    "emailLabel": "Endereço de e-mail",
+    "passwordLabel": "Senha",
+    "confirmPasswordLabel": "Confirme sua senha",
+    "submitButton": "Cadastrar",
+    "loginLinkHTML": "Já possui uma conta? <a href=\"sing-in.html\">Faça login aqui</a>",
+    "copyRight": "&copy; 2024"
+  }
+  

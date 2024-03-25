@@ -1,0 +1,14 @@
+{
+    "pageTitle": "Bem-vindo ao Skin Scan!",
+    "content": {
+      "formTitle": "Cadastre-se ou faça login",
+      "loginFormTitle": "Login",
+      "emailPlaceholder": "Email",
+      "passwordPlaceholder": "Senha",
+      "submitButton": "Entrar",
+      "registerLinkText": "Não tem uma conta?",
+      "registerPageURL": "single-audio.html",
+      "termsAndConditionsText": "Termos e Condições",
+      "footerText": "&copy; 2024"
+    }
+  }
